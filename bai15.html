@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <fieldset>
+        <legend>Your message</legend>
+        <table>
+            <tr>
+                <td><label for="emailto">To</label></td>
+                <td><input type="text" name="txtto" readonly="readonly" id="emailto" size="20" value="exmaple cafe"></td>
+            </tr>
+
+            <tr>
+                <td><label for="emailfrom">Your Email</label></td>
+                <td><input type="text" name="txtemail" id="emailfrom" size="20" tabindex="1" maxlength="250"></td>
+            </tr>
+
+            <tr>
+                <td><label for="emailbody" Message></label></td>
+                <td><textarea name="txtbody" id="emailbody" cols="50" rows="10" tabindex="2"></textarea></td>
+            </tr>
+        </table>
+    </fieldset>
+    <fieldset>
+        <legend>How you found us</legend>
+        <table>
+            <tr>
+                <td><label for="txthear">How did you hear us</label></td>
+                <td><select name="" id="txthear">
+                        <option value="Google">Google</option>
+                    </select></td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="txtnew">Newletter</label>
+                </td>
+                <td>
+                    <input type="checkbox" name="" id="txtnew"><span>Ensure this box is checked if you wound like to receive email updates</span>
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+
+</body>
+
+</html>
