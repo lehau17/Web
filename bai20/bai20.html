@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .bar,
+    div>div>div{
+        width: 100px;
+        padding: 5px;
+        margin: 5px;
+        background-color: #0d90df;
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 1.3em;
+        border: 2px dashed #ffffff;
+        border-radius: 10px;
+        box-shadow:  0 0 0 4px #0d90df, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
+        text-shadow: -1px -1px #aa3030;
+        text-align: center;
+    }
+
+    .bo{
+        position: relative;
+    }
+    .con{
+        position: absolute;
+        top:-6px;
+        left: 114px;
+        display: none;
+    }
+    .bo:hover>.con{
+        display: block;
+    }
+</style>
+<body>
+    <div class="bar">Home</div>
+    <div class="bar">Service</div>
+    <div class="bar bo">Products
+        <div class="con">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+        </div>
+    </div>
+    <div class="bar">Contacts</div>
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style type="text/css">
+    nav{
+        display: block;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        background-color: green;
+    }
+    li{
+        list-style-type: none;
+        display: inline;
+        margin-right: 20px;
+        font-size: 25px;
+    }
+    li:hover{
+        color: orange;
+    }
+    li>ul{
+        display: none;
+    }
+    li:hover ul{
+        display: block;
+        position: absolute;
+        left:200px;
+        background-color: green;
+        margin: 0;
+
+    }
+    li>ul>li{
+        display: block;
+    }
+</style>
+<body>
+    <nav>
+        <ul>
+            <li>How</li>
+            <li>About</li>
+            <li>Product
+                <ul>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                </ul>
+            </li>
+            <li>Services</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+</body>
+</html>
