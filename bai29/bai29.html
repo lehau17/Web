@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<style>
+*{
+    padding: o;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+}
+.nav{
+    width: 100%;
+    height: 40px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    line-height: 40px;
+}
+
+.fa-bars{
+    color:lightblue;
+}
+.bar-list{
+    display: flex;
+    margin-right: 10px;
+}
+.bar-list>li{
+    color: white;
+    margin-left: 20px;
+    list-style-type: none;
+}
+.fa-caret-down{
+    color:gray;
+}
+.nav__logo{
+    margin-left: 10px;
+}
+.qt{
+    margin-top: 50px;
+    padding:0 10px 0 10px;
+    height: 30px;
+    line-height: 30px;
+    background-color: rgb(241, 163, 62);
+    margin-right: 10px;
+}
+.biglogo{
+    width: 100%;
+    height: auto;;
+    display: flex;
+    justify-content: space-between;
+}
+.nav2{
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    border-bottom: 1px solid gray;
+    margin-bottom: 15px;
+}
+.tagqt{
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 50px;
+}
+.bar22{
+    display: flex;
+    justify-content: space-between;
+}
+.bar22>li{
+    list-style-type: none;
+    width: auto;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-bottom: 2px solid gray;
+}
+.bar22>li:nth-child(2){
+    border-top: 1px solid orange;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+}
+.ifo{
+    margin:10px 10px;
+
+}
+.info-des{
+    padding: 10px;
+    border: 1px solid gray;
+}
+.info-des>span{
+    margin-right: 10px;
+}
+.pack{
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.pack>ul{
+    margin-left: -30px;
+}
+.bo{
+    display: flex;
+    border-bottom: 1px solid gray; 
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+.con1{
+    flex: 1;
+}
+.con2{
+    flex: 9;
+}
+.conghe{
+    text-align: center;
+}
+.nut{
+    height: 20px;
+    margin-top: 10px;
+
+}
+.nut>span{
+    border: 1px solid gray;
+    padding-left: 7px;
+    padding-right: 7px;
+    background-color: gray;
+}
+</style>
+<body>
+    <div class="container">
+        <div class="nav">
+            <div class="nav__logo">
+                <i class="fa-solid fa-bars"></i>
+                <span style="color: white;">Stack<span style="color: lightblue;">Exchange</span></span>
+                <i class="fa-solid fa-caret-down"></i>
+            </div>
+
+            <div class="nav__bar">
+                <ul class="bar-list">
+                    <li>Sign up</li>
+                    <li>Login</li>
+                    <li>Tour</li>
+                    <li>Help</li>
+                </ul>
+            </div>
+        </div>
+        <div class="biglogo">
+            <img width="20%" style="margin-top: 20px;" src="/img/stack-removebg-preview.png" alt="">
+            <span class="qt">Question</span>
+        </div>
+        <div class="nav2">
+            <div class="tagqt">Tagged Questions</div>
+            <ul class="bar22">
+                <li>Info</li>
+                <li>NewWest</li>
+                <li>Featured</li>
+                <li>Frequent</li>
+                <li>Votes</li>
+            </ul>
+        </div>
+
+        <div class="ifo">
+            <div class="info-des">
+                <p>CSS (Cascading Styles Sheets) is a style language used for desvripbing the look anf formatting of HTML (Hyper Text Mảrkup Language) and XML (Ễtntion Mảrkup language) documents includeing (but not limited to))</p>
+                <span><a href="">learn more...</a></span><span><a href="">top users</a></span><span><a href="">synomyms (24)</a></span>
+            </div>
+        </div>
+
+        <div class="pack">
+            <ul>
+                <li class="bo">
+                    <div class="con1">
+                        <div>
+                            <div class="conghe">
+                                <div>0</div>
+                                <div>votes</div>
+                                <br>
+                            </div>
+                            <div class="conghe">
+                                <div>0</div>
+                                <div>answers</div>
+                                <br>
+                            </div >
+                            <div class="conghe">
+                                <div>4 views</div>
+                               
+                            </div>
+                        </div>
+                    </div>
+                    <div class="con2">
+                        <a style="font-size: 23px; text-decoration: none;display:block;margin-bottom:10px;" href="">Using npm package in Meteor via cosmos:browserity</a>
+                        <p>I am trying to load Radium (Which is a javascript library for inline css) following instructions memetor. readthedoc.......</p>
+                        <div class="nut">
+                            <span>css</span> <span>meteor</span> <span>reactjs</span>
+                        </div>
+                        <div style="display: flex; justify-content: flex-end; margin-right: 20px;">
+                            <img width="50px" height="50px" src="" alt="" style="margin-right: 10px;">
+                            <div>
+                                <div>23 ngay truoc</div><br>
+                                <span>Le Trung Hau</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="bo">
+                    <div class="con1">
+                        <div>
+                            <div class="conghe">
+                                <div>0</div>
+                                <div>votes</div>
+                                <br>
+                            </div>
+                            <div class="conghe">
+                                <div>0</div>
+                                <div>answers</div>
+                                <br>
+                            </div >
+                            <div class="conghe">
+                                <div>4 views</div>
+                               
+                            </div>
+                        </div>
+                    </div>
+                    <div class="con2">
+                        <a style="font-size: 23px; text-decoration: none;display:block;margin-bottom:10px;" href="">Using npm package in Meteor via cosmos:browserity</a>
+                        <p>I am trying to load Radium (Which is a javascript library for inline css) following instructions memetor. readthedoc.......</p>
+                        <div class="nut">
+                            <span>css</span> <span>meteor</span> <span>reactjs</span>
+                        </div>
+                        <div style="display: flex; justify-content: flex-end; margin-right: 20px;">
+                            <img width="50px" height="50px" src="" alt="" style="margin-right: 10px;">
+                            <div>
+                                <div>23 ngay truoc</div><br>
+                                <span>Le Trung Hau</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

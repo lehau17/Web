@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin:0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .container {
+        background-color: rgb(200, 192, 192);
+        width: 60%;
+        margin: 5px auto;
+        box-shadow: -5px 5px 5px 5px gray;
+        margin-bottom: 5px;
+    }
+    .container::after{
+        content: "";
+        display: block;
+        height: 5px;
+        
+    }
+    .header{
+        color: rgb(150, 31, 31);
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .nav{
+        margin-bottom: 40px;
+    }
+    .nav>ul{
+        display: flex;
+        justify-content: center;
+    }
+    .nav>ul>li{
+        color: white;
+        width: 15%;
+        background-color: rgb(150, 31, 31);
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        height: 30px;
+        line-height: 30px;
+    }
+    li{
+        list-style-type: none;
+    }
+
+    .content{
+        width: 98%;
+        margin: auto;
+        text-align: center;
+        background-color: rgb(110, 104, 104);
+    }
+    .content__header>p{
+        font-size: 50px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .content__header>p::before{
+        content:"";
+        display: block;
+        height: 20px;
+    }
+    .content__des{
+        font-size: 40px;
+        color: rgb(150, 31, 31);
+        margin-bottom: 30px;
+    }
+    .content__nav{
+        display: flex;
+        justify-content: space-evenly;
+
+    }
+    .content__nav>li{
+        font-size: 25px;
+        margin-bottom: 40px;
+    }
+    .content__nav>li>a{
+        text-decoration: none;
+        color: white;
+
+    }
+</style>
+<body>
+    <div class="container">
+        <h1 class="header">
+            Web programming Competition
+        </h1>
+        <div class="nav">
+            <ul>
+                <li>HOME</li>
+                <li>MATERIALS</li>
+                <li>COMPERTITION</li>
+                <li>PAST YEAR</li>
+                <li>ABOUT</li>
+            </ul>
+        </div>
+    
+        <div class="content">
+            <div class="content__header">
+                <p>CSS COURSE</p>
+            </div>
+            <div class="content__des">Learn Web Programming</div>
+            <ul class="content__nav">
+                <li><a href="">Comprehensive</a></li>
+                <li><a href="">Insightful Guest Lectture</a></li>
+                <li><a href="">Interaction with Sponsors</a></li>
+                <li><a href="">$30,000+ in Totals Prizes</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,197 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+.container{
+    width: 100%;
+}
+.bar{
+    width: 100%;
+    background-image: url(/bai30/img30/huntington.jpg);
+    background-repeat: no-repeat;
+    height: 310px;
+    background-position: top;
+    background-size: cover;
+    display: flex;
+
+}
+.logo{
+    flex:3;
+    display:flex;
+    justify-content: center;
+
+}
+
+.logo>img{
+    position: relative;
+    top:25%;
+    margin-right: 10px;
+}
+
+.logo-des{
+    position: relative;
+    top: 30%;
+    margin-left: 20px;
+}
+
+.navbar{
+    flex:2;
+    line-height: 310px;
+    font-size: 24px;
+    text-align: center;
+    /* margin-right: -80px; */
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.header{
+    color: white;
+    font-size: 50px;
+    font-weight: 700px;
+    word-spacing: 5px;
+    padding-bottom: -10px;
+    font-weight: 500;
+}
+.desty{
+    color:gray;
+    font-size: 30px;
+    font-style: italic;
+    padding-top: 10px;
+}
+
+.view{
+    padding: 15px 25px 15px 25px;
+    background-color:  rgba(194, 194, 219,0.3);
+}
+
+.icon{
+    padding: 15px 25px 15px 25px;
+    background-color:  rgba(194, 194, 219, 0.3);
+}
+
+.content{
+    display: flex;
+    width: 100%;
+    margin: auto;
+    font-size: 19px;
+    font-style: normal;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight:400;
+    font-size: 20px;
+    line-height: 2;
+
+}
+p{
+    text-align: justify;
+}
+.cotent__logo{
+    flex: 3;
+    margin-top: 40px;
+    width: 100;
+    text-align: center;
+}
+
+.cotent__logo>div{
+    width: 80%;
+    margin: auto;
+}
+.content__nav{
+    flex: 2;
+}
+
+h2{
+    display: block;
+    margin-top: 20px;
+}
+.xanh{
+
+}
+
+.xemfoot{
+    height: 320px;
+    width: 100%;
+    background-image: url(/bai30/img30/huntington.jpg);
+ 
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.xemfoot>p{
+    text-align: center;
+    transform: translateY(40%);
+}
+
+.xemfoot>p>a{
+    text-decoration: none;
+    color: white;
+}
+.xemfoot>p>i{
+    color: gray;
+}
+
+footer{
+    width: 100%;
+    
+    background-color: brown;
+}
+.footer{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    height: 200px;
+    align-items: center;
+    background-color: brown;}
+.footer>i{
+    height: 40px;
+    width: 40px;
+}
+
+.fa-html5,
+.fa-css3-alt,
+.fa-creative-commons,
+.fa-code-pull-request,
+.fa-github{
+    font-size: 70px;
+}
+
+.content__nav>ul{
+    margin-top: 40px;
+    margin-left: 30px;
+}
+
+li{
+    list-style-type: none;
+}
+
+
+
+.bol{
+    display: block;
+}
+
+
+
+.content__nav>ul>li{
+    border-bottom: 1px solid gray;
+}
+
+.t2{
+    position: relative;
+    top:750px;
+}
+
+.content__nav{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+
+
+

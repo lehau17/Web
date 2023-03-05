@@ -1,0 +1,172 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+
+.container{
+    width: 70%;
+    margin: auto;
+    border: 1px solid black;
+}
+
+header{
+    width: 100%;
+    background-color:  rgb(74, 74, 154);
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.search{
+    float: right;
+    margin: 10px 10px;
+}
+.search>input{
+    margin-right: 10px;
+    padding: 5px 5px;
+    background-color: rgb(35, 35, 79);
+}
+.search>span{
+    border: 1px solid rgb(41, 41, 124);
+    padding: 5px 5px;
+    background-color: rgb(35, 35, 79);
+
+}
+.nav>ul{
+    display: flex;
+    float: inline-end;
+}
+
+.nav>ul>li{
+    padding: 15px 15px;
+    margin: 0 15px;
+    background-color: rgb(139, 139, 198);
+    font-weight: bolder;
+}
+
+.bo{
+    position: relative;;
+}
+.con{
+    position: absolute;
+    width: 200px;
+    display: none;
+    font-weight: bolder;
+    left: 0;
+}
+.con>li{
+    padding: 20px 10px;
+    background-color: rgb(139, 139, 198);
+}
+
+
+
+.bo:hover .con {
+    display: block;
+}
+.ongnoi{
+    margin: 15px;
+
+}
+.ongnoi>h2{
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 2px dotted black;
+}
+.section{
+    display: flex;
+}
+.content{
+    flex: 7;
+    display: flex;
+    flex-direction: row ;
+}
+.content__i4{
+    flex: 1;
+    margin: 0 0px;
+}
+
+.content__i4>p{
+    text-align: justify;
+    color:darkorange;
+    font-style: italic;
+    text-shadow: 2px 5px 4px darkorange;
+    margin-bottom: 15px;
+}
+
+input[type="button"]{
+    margin-right: 10px;
+    padding: 10px 10px;
+}
+input[type="text"],textarea{
+    background-color: rgb(255, 237, 237);
+}
+
+.order{
+    flex: 1;
+    margin-left: 30px;
+    opacity: 0.8;
+}
+.order>h2{
+    padding-bottom: 15px;
+    border-bottom: 2px dotted black;
+    opacity: 0.8;
+}
+
+.con1{
+    margin: 15px 0 30px 0;
+}
+
+.con3{
+    margin-top:15px;
+}
+.des{
+    flex: 3;
+    margin-left: 20px;
+}
+
+.descon{
+    background-color: rgb(244, 237, 237);
+    padding-bottom: 20px;
+}
+
+.deschau{
+    margin: 0px 20px;
+    padding:20px 0;
+}
+.deschau>h3{
+    padding-bottom: 15px;
+    border-bottom: 2px dotted black;
+
+}
+.deschau>img{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.deschau>a{
+    float: right;
+}
+
+footer{
+    width: 70%;
+    margin: auto;
+    padding: 10px 10px;
+    background-color: #483D8B;
+}

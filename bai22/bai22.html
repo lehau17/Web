@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    h1{
+        position: fixed;
+        top:0px;left: 0px;
+        width: 100%;
+        color:#ffffff;
+        background-color: #666666;
+        margin: 0;
+        padding: 10px;
+        height: 60px;
+        z-index: 2;
+    }
+    div.nav{
+        z-index: 1;
+        position: absolute;
+        top:80px;
+        left:0px;
+        width: 100px;
+        height: 300px;
+        padding: 10px;
+        background-color: #d6d6d6;
+    }
+    p.abtract{
+        font-weight: bold;
+    }
+    div.nav::before{
+        content: "navication";
+        font-size: 18px;
+        font-weight: bold;
+        display: block;
+    }
+    .section{
+        position: absolute;
+        top:65px;
+        left: 165px;
+    }
+    .abtract{
+        display: flex;
+    }
+</style>
+<body>
+    <div>
+        <header>
+            <h1>Cascading style Sheets</h1>
+        </header>
+        <div class="content">
+            <div class="nav"><a href="">Examsple Index</a></div>
+            <div class="section">
+                <h2>CssPositing</h2>
+                <p class="abtract">
+                    <img class="float left" src="/img/th (2).jpg" alt="" width="40px">
+                    <span>This article introduces the topic of laying out web pages in CSS using a combination of positioning schemes</span>
+                </p> 
+                <p>CSS allows you to use three diferent positioning schemes to create complex layout</p>
+                <ul>
+                    <li>Nomal flow</li>
+                    <li>Absolute positioning</li>
+                    <liFloating</li>
+                </ul>
+                <p>BY using a combination of these schemes you do not need to resort to using tables to lay out your pages</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
