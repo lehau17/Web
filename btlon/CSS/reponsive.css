@@ -1,0 +1,23 @@
+/* PC */
+@media (min-width:1024px){
+
+}
+/* tablex */
+@media (min-width:740px) and(max-width:1023px){
+
+}
+
+/* moblie */
+@media (min-width:740px){
+
+}
+
+/* @media (min-width: 576px){
+    .navbar-expand-sm .navbar-nav {
+        flex-direction: row;
+        margin-top: -5px;
+    }
+    .nhiuimg{
+        display: none;
+    }
+} */

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    li{
+        list-style-type: none;
+    }
+    a{
+        text-decoration: none ;
+    }
+    .container{
+        background-image: url(/img/dark-wood.jpg);
+        width: 100%;
+        height: 100%;
+        background-repeat: repeat;
+    }
+    .container::after{
+        content: "";
+        height: 60px;
+        display: block;
+    }
+    .FoodReview{
+        width: 70%;
+        margin: auto;
+        background-color: white;
+    }
+    header{
+        background-image: url(/img/header.jpg);
+        height: 125px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+        
+    }
+    .nav>ul{
+        display: flex;
+        background-color: gray;
+        margin-top: -1px;
+        height: 30px;
+        line-height: 30px;
+        position: relative;
+        top: 0;
+    }
+    .nav>ul>li:hover>a{
+        color:black;
+    }
+
+    .nav>ul>li{
+        color: white;
+        width: 100px;
+        text-align: center;
+    }
+    .nav>ul>li>a{
+        color:white;
+    }
+    .section{
+        display: flex;
+    }
+    .section__food{
+        flex: 3;
+    }
+    .section__nav{
+        flex: 1;
+        border-left: 1px solid lightblue;
+    }
+    .section__nav>.nav-list>h3{
+        color:rgb(213, 112, 112);
+        margin-top: 30px;
+    }
+    .nav-list>ul>li{
+        margin-left: 5px;
+        height: 30px;
+        margin-top: 13px;
+        margin-bottom: 7px;
+    }
+
+    .nav-list{
+        margin-left: 20px;
+    }
+    .section__contact{
+        margin-top: 30px;
+        margin-bottom: 40px;
+        margin-left: 20px;
+    }
+    .section__contact>h3{
+        margin-bottom: 30px;
+        color:rgb(213, 112, 112);
+}    
+    .food-info{
+        display: flex;
+        margin: 20px 15px;
+        
+    }
+    img{
+        width:100%;
+        margin: auto;
+    }
+    .info__img{
+        flex:1;
+        border: 1px solid gray;
+        padding:4px 4px;
+    }
+    .info__des{
+        flex:2;
+        padding-left: 20px;
+    }
+
+    .food__time{
+        font-size: 25px;
+        color:rgb(213, 112, 112);  
+      
+    }
+    .food__header{
+        font-size: 25px;
+        color:gray;
+    }
+    span{
+        display: block;
+    }
+    footer{
+        height: 40px;
+        background-color:gray;
+        line-height: 40px;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="FoodReview">
+            <header>
+
+            </header>
+
+            <div class="nav">
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Classes</a></li>
+                        <li><a href="">catering</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+            </div>
+
+            <div class="section">
+                <div class="section__food">
+                    <div class="food-info">
+                        <div class="info__img"><img src="/img/th (2).jpg" alt="">
+                        <div>
+                            Bok choi
+                        </div>
+                    </div>
+                        <div class="info__des">
+                            <span class="food__header">Japanis Vegetatian</span>
+                            <span class="food__time">Five week course in London</span>
+                            <p>A five week introduction to traditional japanese vegetarian meals, teaching you a selection pf rice and noodle dishes</p>
+                        </div>
+                    </div>
+                    <div class="food-info">
+                        <div class="info__img"><img src="/img/th (2).jpg" alt="">
+                        <div>
+                            Bok choi
+                        </div>
+                    </div>
+                        <div class="info__des">
+                            <span class="food__header">Japanis Vegetatian</span>
+                            <span class="food__time">Five week course in London</span>
+                            <p>A five week introduction to traditional japanese vegetarian meals, teaching you a selection pf rice and noodle dishes</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="section__nav">
+                    <div class="nav-list">
+                        <h3>PopuLar Recipes</h3>
+                        <ul>
+                            <li><a href="">Yakitori (grilled chicken)</a></li>
+                            <hr>
+                            <li><a href="">Tsukune (minced chicken patties)</a></li>
+                            <hr>
+                            <li><a href="">Okonomiyaki (savory pancakes)</a></li>
+                            <hr>
+                            <li><a href="">MIzutaki (chick stew)</a></li>
+                            <hr>
+                        </ul>
+                    </div>
+                    <div class="section__contact">
+                        <h3>Contact</h3>
+                        <span>YoKo's kitchen</span>
+                        <span>27 redchurch Street</span>
+                        <span>Shoreditch</span>
+                        <span>London E27DP</span>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                @2011 Yoko' kitchen
+            </footer>
+        </div>
+       
+    </div>
+</body>
+</html>

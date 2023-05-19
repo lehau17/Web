@@ -1,0 +1,62 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+}
+
+.chinhpad{
+    padding: 0;
+    margin: 0;
+}
+
+.offcanvas-title{
+    font-size: 35px;
+}
+
+.tangfont{
+    font-size: 16px;
+    
+}
+h2{
+    text-align: start;
+}
+
+.item-cavas{
+    z-index: 1;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+}
+
+.item-cavas:hover{
+    background-color: rgba(224, 106, 106, 0.6);
+    padding:0;
+}
+
+.hinhanht1{
+    display: flex;
+    margin: auto;
+    border-radius: 1000px;
+}
+.khungnv{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bangsp,tr,th,td{
+    border: 3px solid #333;
+    padding: 15px;
+    text-align: center;
+}
+
+th{
+    background-color: rgba(224, 106, 106, 0.6);
+}
+
+.modal-body form label {
+    width: 100%;
+    display: block;
+    text-align:left;
+    margin-top: 15px;
+}

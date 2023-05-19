@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="../BOOTSTRAP/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../BOOTSTRAP/js/bootstrap.bundle.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/CSS/main.css">
+    <link rel="stylesheet" href="/CSS/base.css">
+    <link rel="stylesheet" href="/CSS/log.css">
+
+    <title>Liên Hệ</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark headeredit">
+        <div class="container-fluid ">
+          <a class="navbar-brand " href="javascript:void(0)">
+            <img src="/ASSETS/img/logo-removebg-preview.png" id="logo" alt="" width="154px" height="87px" onload="load()" >
+          </a>
+          <button class="navbar-toggler navbar-toggler-edit" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span class="navbar-toggler-icon navbar-toggler-icon-edit"></span>
+          </button>
+          <div class="collapse navbar-collapse collapse navbar-collapse-edit " id="mynavbar">
+            <ul class="navbar-nav me-auto navbar-nav-edit ">
+                <li class="nav-item nav-item-edit">
+                    <a class="nav-link" id="sign" href="#container1">Đăng Nhập</a>
+                  </li>
+              <li class="nav-item nav-item-edit">
+                <a class="nav-link" href="/HTML/manage.html">Quản lý</a>
+              </li>
+              <li class="nav-item nav-item-edit">
+                <a class="nav-link" href="/HTML/main.html">Trang chủ</a>
+              </li>
+              <li class="nav-item nav-item-edit">
+                <a class="nav-link" href="/HTML/service.html">Dịch vụ</a>
+              </li>
+              <li class="nav-item nav-item-edit">
+                <a class="nav-link" href="/HTML/shopping.html">Mua sắm</a>
+              </li>
+              <li class="nav-item nav-item-edit">
+                <a class="nav-link" href="/HTML/contact.html">Liên hệ</a>
+              </li>
+            </ul>
+           
+          </div>
+        </div>
+    </nav>
+    <div class="container1" id="container1">
+        <div class="form-container1 sign-up-container1">
+            <form action="#">
+                <h1>Tạo Tài Khoản</h1>
+                <div class="social-container1">
+                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <span>Hoặc sử dụng email để đăng ký</span>
+                <input type="text" placeholder="Name" id="creN"/>
+                <div id="des-creN"></div>
+                <input type="email" placeholder="Email" id="creE"/>
+                <div id="des-creE"></div>
+                <input type="password" placeholder="Password" id="creP"/>
+                <div id="des-creP"></div>
+
+                <button id="signup" >Sign Up</button>
+                <div id="desin"></div>
+            </form>
+        </div>
+        <div class="form-container1 sign-in-container1">
+            <form action="#">
+                <h1>Đăng nhập</h1>
+                <div class="social-container1">
+                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <span>hoặc sử dụng tài khoản mạng xã hội </span>
+                <input type="email" placeholder="Email" id="email" />
+                <div id="dese"></div>
+                <input type="password" placeholder="Password" id="pass" />
+                <div id="desp"></div>
+
+                <a href="#">Quên mật khẩu?</a>
+                <div id="des"></div>
+                <button id="signin" type="button">Sign In</button>
+            </form>
+        </div>
+        <div class="overlay-container1">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Welcome Back!</h1>
+                    <p>Để giữ liên hệ với chúng tôi vui lòng đăng nhập</p>
+                    <button class="ghost" id="signIn">Sign In</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>Hello, Friend!</h1>
+                    <p>Đăng ký và bắt đầu cuộc hành trình với chúng tôi</p>
+                    <button class="ghost" id="signUp">Sign Up</button>  
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="header-contact">
+                Liên Hệ Với TPET
+            </div>
+            <div class="bao">
+                <div class="content-contact">
+                    <div class="infosummit">
+                        <div class="summit">
+                            <label for="">Họ Tên</label>
+                            <div><input class="dauvao" type="text" name="" id="" placeholder="Họ Và Tên..."></div>
+                        </div>
+                        <div class="summit">
+                            <label for="">Số Điện Thoại</label>
+                            <div><input class="dauvao" type="text" name="" id="" placeholder="Số Điện Thoại...."></div>
+                        </div>
+                        <div class="summit">
+                            <label for="">E-maill>
+                            <div><input class="dauvao" type="text" name="" id="" placeholder="E-mail...."></div>
+                        </div>
+                        <div class="summit">
+                            <label for="">Nội dung liên hệ</label>
+                            <div><textarea name="" id="" cols="38" rows="6" placeholder="Nội Dung...."></textarea></div>
+                        </div>
+                        <div class="d-grid gap-2 nutgui">
+                            <button type="button" name="" id="" class="btn btn-primary">Gửi</button>
+                        </div>
+                    </div>
+                    <img class="hinhanhminhoa" src="/ASSETS/img/th__5_-removebg-preview.png" alt="" width="50%" height="60%">
+                </div>
+            </div>
+        </div>
+    </div>
+
+ <div class="container-fluid">
+        <div class="row">
+            <div class="header-contact">
+                Hoặc
+            </div>
+            <div class="bao">
+                <div class="baonho">
+                    <div>
+                        <i class="fa-brands fa-facebook"></i>
+                        <span><a href="https://www.facebook.com/profile.php?id=100041792582064&mibextid=ZbWKwL" target="_blank">LeHau17</a></span>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-square-instagram"></i>
+                        <span><a href="">LeHau17</a></span>
+                    </div>
+                </div>
+                <div class="baonho">
+                    <div>
+                        <i class="fa-brands fa-facebook"></i>
+                        <span><a href="https://www.facebook.com/huyentrang.pham.75054?mibextid=ZbWKwL" target="_blank">HuyenTrang</a></span>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-square-instagram"></i>
+                        <span><a href="">HuyenTrang</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            
+            <div class="nhiuimg fot2">
+                <img class="dichuyen" src="/ASSETS/img/dog3.png" alt="">
+                <img class="dichuyen" src="/ASSETS/img/dog1.png" alt="">
+                <img src="/ASSETS/img/dog2.png" alt="">
+                <img src="/ASSETS/img/dog4.png" alt="">
+                <img src="/ASSETS/img/dog5.png" alt="">
+                <img src="/ASSETS/img/dog6.png" alt="">
+
+
+            </div>
+
+            <div class="footer">
+                <div class="logofoot">
+                    <div class="hinhlogo">
+                        <img src="/ASSETS/img/logo-removebg-preview.png" alt="" width="50%">
+                    </div>
+                    <p class="motalogo">Mang tình yêu thú cưng đến mọi nhà</p>
+                    <div class="social">
+                        <i class="fa-brands fa-facebook"></i><i class="fa-brands fa-instagram"></i>
+                    </div>
+                </div>
+                <div class="contact">
+                    <h1>Liên hệ</h1>
+                    <div class="contact-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Long An</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>012345678</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fa-solid fa-business-time"></i>
+                        <span>T2->T7:8.AM->8.PM</span>
+                    </div>
+                </div>
+                <div class="TPET">
+                    <h1>Cộng dồng</h1>
+                    <div class="contact-item">
+                        <h2><i class="fa-solid fa-shop"></i>Cửa hàng thú cưng</h2>
+                    </div>
+                    <div class="contact-item">
+                        <h2><i class="fa-solid fa-table"></i>Dịch vụ tiện ích cho thú cưng</h2>
+
+                    </div>
+                    <div class="contact-item">
+                        <h2><i class="fa-solid fa-person"></i>Cộng đồng TPET</h2>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="/JS/log.js"></script>
+</html>

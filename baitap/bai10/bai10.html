@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    @keyframes scroll {
+        to{
+            left:100%;
+            transform: rotate(180deg);
+        }
+    }
+    div{
+        animation-name: scroll;
+        animation-direction:alternate ;
+        animation-timing-function: ease;
+        animation-iteration-count: infinite;
+        animation-duration: 5s;
+    }
+    #ani{
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        left: 0px;
+        top:100px;
+        background: #ffcc00;
+    }
+
+</style>
+<body>
+    <div id="ani">Haule</div>
+</body>
+</html>

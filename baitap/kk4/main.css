@@ -1,0 +1,123 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    background-color: rgb(183, 119, 35);
+    color: green;
+    padding: 20px 20px;
+    text-shadow: -2px -5px 7px #fff;
+}
+
+header h2{
+
+
+}
+
+.nav{
+    background-color: white;
+    color:rgb(183, 119, 35);
+}
+
+.nav>ul{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.nav>ul>li{
+    list-style-type: none;
+    padding:10px 20px;
+    font-size: 20px;
+}
+
+.bg{
+    background-image: url(/img/backg4.png);
+    width: 100%;
+    height: 250px;
+    min-height: 150px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 30px;
+}
+
+.content{
+    display: flex;
+    margin-left: 20px;
+}
+.info{
+    flex: 6;
+    margin-right: 80px;
+    border-right: 1px solid black;
+    padding-right: 70px;
+}
+
+.info>p,.info>h2{
+    display: block;
+    margin-top: 20px;
+    color:rgb(183, 119, 35);
+    margin-left: 20px;
+}
+
+.info>p{
+    margin-left: 40px;
+}
+.list{
+    flex: 4;
+}
+
+input[type="text"]{
+   border: none;
+}
+
+.text{
+    margin-top: 20px;
+    font-size: 25px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid black;
+    margin-left: 40px;
+}
+
+.bao{
+    padding-left: 80px;
+    display: inline-block;
+    width: auto;
+    padding-top:40px;
+    padding-bottom: 30px;
+    padding-right: 40px;
+    background-color:  rgba(231, 235, 213, 0.842);
+    border-radius: 20px 20px 0 0;
+}
+
+.bao li, .bao h2{
+    width: 200px;
+}
+.bao li{
+    margin-left: 20px;
+    margin-top: 10px
+}
+
+.bao h2{
+    margin-bottom: 20px;
+}
+
+.Morei4{
+    display: flex;
+    margin-top: 40px;
+}
+
+.Morei4>img{
+    margin: 10px;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+footer{
+    width: 100%;
+    text-align: center;
+    border: 1px solid black;
+    padding: 30px;
+    margin-top: 40px
+}

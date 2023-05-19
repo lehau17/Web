@@ -1,0 +1,59 @@
+:root{
+    --white-color:white;
+    --black-color:black;
+    --text-color:#333;
+    --pri-color:#d0d242;
+}
+
+*{
+    box-sizing: inherit;
+
+}
+
+html{
+    font-family: 'Roboto', sans-serif;
+    font-size: 62.5%;
+    list-style: 1.6rem;
+    box-sizing: border-box;
+    color:black;
+
+}
+
+a{
+    text-decoration: none;
+    color:black;
+
+}
+li{
+    list-style-type: none;
+
+}
+
+.hidden{
+    display: none;
+}
+
+@keyframes tutu{
+    from{
+        opacity: 0;
+        transform: scale(0);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes rung{
+    from{
+        transform: scale(0);
+        opacity: 0.8;
+        color:var(--pri-color);
+    }
+    to{
+        transform: scale(1);
+        opacity: 1;
+        color:red;
+    }
+}
+

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="../BOOTSTRAP/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../BOOTSTRAP/js/bootstrap.bundle.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/CSS/main.css">
+    <link rel="stylesheet" href="/CSS/base.css">
+    <link rel="stylesheet" href="/CSS/log.css ">
+    <title>Shopping</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark headeredit">
+        <div class="container-fluid ">
+          <a class="navbar-brand " href="javascript:void(0)">
+            <img src="/ASSETS/img/logo-removebg-preview.png" id="logo" alt="" width="154px" height="87px" onload="load()" >
+          </a>
+          <button class="navbar-toggler navbar-toggler-edit" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span class="navbar-toggler-icon navbar-toggler-icon-edit"></span>
+          </button>
+          <div class="collapse navbar-collapse collapse navbar-collapse-edit " id="mynavbar">
+            <ul class="navbar-nav me-auto navbar-nav-edit ">
+                <li class="nav-item nav-item-edit">
+                    <a class="nav-link" id="sign" href="#container1">Đăng Nhập</a>
+                  </li>
+              <li class="nav-item nav-item-edit">
+                <a class="nav-link" href="/HTML/manage.html">Quản lý</a>
+              </li>
+              <li class="nav-item nav-item-edit">
+                <a class="nav-link" href="/HTML/main.html">Trang chủ</a>
+              </li>
+              <li class="nav-item nav-item-edit">
+                <a class="nav-link" href="/HTML/service.html">Dịch vụ</a>
+              </li>
+              <li class="nav-item nav-item-edit">
+                <a class="nav-link" href="/HTML/shopping.html">Mua sắm</a>
+              </li>
+              <li class="nav-item nav-item-edit">
+                <a class="nav-link" href="/HTML/contact.html">Liên hệ</a>
+              </li>
+            </ul>
+           
+          </div>
+        </div>
+    </nav>
+    <div class="container1" id="container1">
+        <div class="form-container1 sign-up-container1">
+            <form action="#">
+                <h1>Tạo Tài Khoản</h1>
+                <div class="social-container1">
+                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <span>Hoặc sử dụng email để đăng ký</span>
+                <input type="text" placeholder="Name" id="creN"/>
+                <div id="des-creN"></div>
+                <input type="email" placeholder="Email" id="creE"/>
+                <div id="des-creE"></div>
+                <input type="password" placeholder="Password" id="creP"/>
+                <div id="des-creP"></div>
+
+                <button id="signup" >Sign Up</button>
+                <div id="desin"></div>
+            </form>
+        </div>
+        <div class="form-container1 sign-in-container1">
+            <form action="#">
+                <h1>Đăng nhập</h1>
+                <div class="social-container1">
+                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <span>hoặc sử dụng tài khoản mạng xã hội </span>
+                <input type="email" placeholder="Email" id="email" />
+                <div id="dese"></div>
+                <input type="password" placeholder="Password" id="pass" />
+                <div id="desp"></div>
+
+                <a href="#">Quên mật khẩu?</a>
+                <div id="des"></div>
+                <button id="signin" type="button">Sign In</button>
+            </form>
+        </div>
+        <div class="overlay-container1">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Welcome Back!</h1>
+                    <p>Để giữ liên hệ với chúng tôi vui lòng đăng nhập</p>
+                    <button class="ghost" id="signIn">Sign In</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>Hello, Friend!</h1>
+                    <p>Đăng ký và bắt đầu cuộc hành trình với chúng tôi</p>
+                    <button class="ghost" id="signUp">Sign Up</button>  
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="container-fluid">     
+        <div class="row">
+            <div class="slider">
+                <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+                    <!-- Indicators/dots -->
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                        <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                    </div>
+                    
+                    <!-- The slideshow/carousel -->
+                    <div class="carousel-inner" >
+                        <div class="carousel-item active">
+                        <img src="/ASSETS/img/elle-viet-nam-chup-anh-thu-cung-6.jpg" alt="" class="d-block" style="width:100%" height="550px">
+                        </div>
+                        <div class="carousel-item">
+                        <img src="/ASSETS/img/anh-4k-chu-meo-dang-yeu-dang-tron-chu-cua-no_085125587.jpg" alt="Chicago" class="d-block" style="width:100%" height="550px">
+                        </div>
+                        <div class="carousel-item">
+                        <img src="/ASSETS/img/hinh-nen-cho-meo_031336153.jpg" alt="" class="d-block" style="width:100%" height="550px">
+                        </div>
+                        <div >
+                            
+                        <div class="search">
+                            <input type="search" name="" id="" placeholder="Tìm kiếm thông tin về thú cưng của bạn">
+                        </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Left and right controls/icons -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="header2">
+                <h1>TPET mang đến cho bạn các dịch vụ</h1>
+            </div>
+            <div class="content">
+                <div class="des">
+                    <div class="mota">
+                        <div class="item">
+                            <h2><i class="fa-solid fa-shop"></i>Cửa hàng thú cưng</h2>
+                            <p>Thông tin về những chú mèo sẵn sàng đón nhận máy ấm mới cho mình </p>
+                        </div>
+                        <div class="item">
+                            <h2><i class="fa-solid fa-table"></i>Dịch vụ tiện ích cho thú cưng</h2>
+                            <p>                                    Tất cả các nội dung chăm sóc thú cưng từ các chuyên gia trong lĩnh vực</p>
+                        </div>
+                        <div class="item">
+                            <h2><i class="fa-solid fa-person"></i>Cộng đồng TPET</h2>
+                            <p>                                    Cộng đồng chia sẻ các thông tizaln bổ ích về thú cưng, chia sẻ các khoảnh khắc đẹp siêu cute về các hoàng thượng hay công chúa. Những khoảnh khắc này sẽ được chia sẻ lên trên cộng đông Vpet </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="hinh">
+                    <img src="/ASSETS/img/th (1).jfif" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.8582379444315!2d106.68465135056641!3d10.822158892252668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174deb3ef536f31%3A0x8b7bb8b7c956157b!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBDw7RuZyBuZ2hp4buHcCBUUC5IQ00!5e0!3m2!1svi!2s!4v1678683619790!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="nhiuimg chinhtrangchu">
+                <img class="dichuyen" src="/ASSETS/img/dog3.png" alt="">
+                <img class="dichuyen" src="/ASSETS/img/dog1.png" alt="">
+                <img src="/ASSETS/img/dog2.png" alt="">
+                <img src="/ASSETS/img/dog4.png" alt="">
+                <img src="/ASSETS/img/dog5.png" alt="">
+                <img src="/ASSETS/img/dog6.png" alt="">
+
+
+            </div>
+            <div class="footer">
+                <div class="logofoot">
+                    <div class="hinhlogo ">
+                        <img src="/ASSETS/img/logo-removebg-preview.png" alt="" width="50%" onload="">
+                    </div>
+                    <p class="motalogo">Mang tình yêu thú cưng đến mọi nhà</p>
+                    <div class="social">
+                        <i class="fa-brands fa-facebook"></i><i class="fa-brands fa-instagram"></i>
+                    </div>
+                </div>
+                <div class="contact">
+                    <h1>Liên hệ</h1>
+                    <div class="contact-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Long An</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>012345678</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fa-solid fa-business-time"></i>
+                        <span>T2->T7:8.AM->8.PM</span>
+                    </div>
+                </div>
+                <div class="TPET">
+                    <h1>Cộng dồng</h1>
+                    <div class="contact-item">
+                        <h2><i class="fa-solid fa-shop"></i>Cửa hàng thú cưng</h2>
+                    </div>
+                    <div class="contact-item">
+                        <h2><i class="fa-solid fa-table"></i>Dịch vụ tiện ích cho thú cưng</h2>
+
+                    </div>
+                    <div class="contact-item">
+                        <h2><i class="fa-solid fa-person"></i>Cộng đồng TPET</h2>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+</body>
+<script src="../JS/log.js"></script>
+
+</html>

@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="../BOOTSTRAP/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../BOOTSTRAP/js/bootstrap.bundle.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.3.0/chart.min.js" integrity="sha512-mlz/Fs1VtBou2TrUkGzX4VoGvybkD9nkeXWJm3rle0DPHssYYx4j+8kIS15T78ttGfmOjH0lLaBXGcShaVkdkg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <link rel="stylesheet" href="/CSS/main.css">
+    <link rel="stylesheet" href="/CSS/base.css">
+    <link rel="stylesheet" href="/CSS/log.css ">
+    <link rel="stylesheet" href="/CSS/manage.css">
+    <title>Quản Lý</title>
+</head>
+<body class="bg-white">
+    <nav class="navbar navbar-expand-sm navbar-dark headeredit">
+        <div class="container-fluid ">
+          <a class="navbar-brand " href="javascript:void(0)">
+            <img src="/ASSETS/img/logo-removebg-preview.png" id="logo" alt="" width="154px" height="87px" onload="load()" >
+          </a>
+          <button class="navbar-toggler navbar-toggler-edit" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span class="navbar-toggler-icon navbar-toggler-icon-edit"></span>
+          </button>
+          <div class="collapse navbar-collapse collapse navbar-collapse-edit " id="mynavbar">
+            <ul class="navbar-nav me-auto navbar-nav-edit ">
+                <li class="nav-item nav-item-edit">
+                    <a class="nav-link" id="sign" href="#container1">Đăng Nhập</a>
+                  </li>
+              <li class="nav-item nav-item-edit">
+                <a class="nav-link" href="/HTML/manage.html">Quản lý</a>
+              </li>
+              <li class="nav-item nav-item-edit">
+                <a class="nav-link" href="/HTML/main.html">Trang chủ</a>
+              </li>
+              <li class="nav-item nav-item-edit">
+                <a class="nav-link" href="/HTML/service.html">Dịch vụ</a>
+              </li>
+              <li class="nav-item nav-item-edit">
+                <a class="nav-link" href="/HTML/shopping.html">Mua sắm</a>
+              </li>
+              <li class="nav-item nav-item-edit">
+                <a class="nav-link" href="/HTML/contact.html">Liên hệ</a>
+              </li>
+            </ul>
+           
+          </div>
+        </div>
+    </nav>
+    <div class="container1" id="container1">
+        <div class="form-container1 sign-up-container1">
+            <form action="#">
+                <h1>Tạo Tài Khoản</h1>
+                <div class="social-container1">
+                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <span>Hoặc sử dụng email để đăng ký</span>
+                <input type="text" placeholder="Name" id="creN"/>
+                <div id="des-creN"></div>
+                <input type="email" placeholder="Email" id="creE"/>
+                <div id="des-creE"></div>
+                <input type="password" placeholder="Password" id="creP"/>
+                <div id="des-creP"></div>
+
+                <button id="signup" >Sign Up</button>
+                <div id="desin"></div>
+            </form>
+        </div>
+        <div class="form-container1 sign-in-container1">
+            <form action="#">
+                <h1>Đăng nhập</h1>
+                <div class="social-container1">
+                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <span>hoặc sử dụng tài khoản mạng xã hội </span>
+                <input type="email" placeholder="Email" id="email" />
+                <div id="dese"></div>
+                <input type="password" placeholder="Password" id="pass" />
+                <div id="desp"></div>
+
+                <a href="#">Quên mật khẩu?</a>
+                <div id="des"></div>
+                <button id="signin" type="button">Sign In</button>
+            </form>
+        </div>
+        <div class="overlay-container1">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Welcome Back!</h1>
+                    <p>Để giữ liên hệ với chúng tôi vui lòng đăng nhập</p>
+                    <button class="ghost" id="signIn">Sign In</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>Hello, Friend!</h1>
+                    <p>Đăng ký và bắt đầu cuộc hành trình với chúng tôi</p>
+                    <button class="ghost" id="signUp">Sign Up</button>  
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="offcanvas  offcanvas-start" id="demo">
+        <div class="offcanvas-header">
+          <h1 class="offcanvas-title">Quản lý</h1>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div class="p-4 item-cavas"><a href="#idnv">Nhân Viên </a></div>
+          <div class="p-4 item-cavas"><a href="#idshop"> Thông tin Shop </a>  </div>
+          <div class="p-4 item-cavas"><a href="#idsp"> Quản lý sản phẩm </a></div>
+          <div class="p-4 item-cavas"><a href="idln"> Lợi nhuận </a></div>
+        </div>
+    </div>
+      
+    <div class="container mt-3 p-4 border-bottom border-3">
+        <h1 class="text-center p-3">Quản lý chung</h1>
+        <button class="btn btn-danger h-auto tangchieucao" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+            <i class="fa-solid fa-house fa-fade fa-2xl tangfont"></i>
+        </button>
+        <span class="tangfont">Mở tệp quản lý</span>
+        <div class="row mt-5">
+            <div class="col-12 p-5 border-bottom border-3 ">
+                <div class="header-nv justify-content-center" id="idnv">
+                  <h1 class="text-center" >Nhân viên</h1>
+                    <button type="button" class="btn btn-primary p-2 mb-5 mt-5" data-bs-toggle="modal" data-bs-target="#myModal3">Thêm nhân viên</button>
+                    
+                    <div class="row khungnv bg-white p-5">
+                      
+                    
+                        <div class="col-xl-6 col-md-12 chinhpad customer" >
+                            <div class="card m-auto mb-5" style="width:400px">
+                                <img class="card-img-top" src="/ASSETS/img/haule.jpg" alt="Card image" style="width:100%" height="400px">
+                                <div class="card-body">
+                                    <h4 class="card-title">Lê Trung Hậu</h4>
+                                    <p class="card-text">Kỹ sư công nghệ thông tin</p>
+                                    <a href="#" class="btn btn-primary seei4" data-bs-toggle="modal" data-bs-target="#myModal1">See profile</a>
+                                    <button type="button" class="btn btn-primary delete-cus">Xóa </button>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="col-xl-6 col-md-12 chinhpad customer" >
+                            
+                            <div class="card m-auto mb-5" style="width:400px">
+                                <img class="card-img-top" src="/ASSETS/img/changbebong.png" alt="Card image" style="width:100%">
+                                <div class="card-body">
+                                    <h4 class="card-title">Phạm Thị Huyền Trang</h4>
+                                    <p class="card-text">Kỹ sư công nghệ thông tin</p>
+                                    <a href="#myModal" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">See Profile</a>
+                                    <button type="button" class="btn btn-primary delete-cus">Xóa </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 mt-5 p-5 bg-white shadow" id="idln">
+                <h1 class="text-center mt-5 ">Lợi nhuận </h1>
+            <canvas id="myChart" class="text-center mt-5 border-bottom border-3 pb-5" style="width:100%;max-width:1000px"></canvas>
+
+            </div>
+          </div>
+          <div class="col-12 mt-5" id="idshop">
+              <form action="" class="pb-5 shadow w-100 ">
+                <h1 class="text-center mt-5 pb-5">Thông tin công ty</h1>
+                <label for="" class="text-start">Địa điêm:</label>
+                <input type="text" name="" id="address" value="Long An">
+                <label for="">Số điện thoại:</label>
+                <input type="text" name="" id="sdt" value="012345678">
+                <label for="">Thời gian làm việc:</label>
+                <input type="text" name="" id="timelm" value="8AM->8PM">
+                <label for="">Liên hệ:</label>
+                <input type="text" name="" id="contacts" value="TPET@gmail.com" class="mb-5">
+                <div>
+                  <button type="text" class="btn btn-primary p-3 luu">Lưu Thông Tin</button>
+                  <button type="reset" class="btn btn-danger p-3">Reset</button>
+                </div>
+              </form>
+          </div>
+        </div>
+    </div>
+
+    <div class="container">
+      <div class="row" id="idsp">
+        <h1 class="text-center m-5">Quản lý sản phẩm</h1>
+        <div class="col-4">
+          <button type="text" class="btn btn-primary p-3">Thêm 1 sản phẩm</button>
+          <button type="text" class="btn btn-primary p-3">Xóa 1 sản phẩm</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <table class="w-100 bangsp mt-5" id="bang">
+            <thead>
+              <tr>
+                <th class="text-center">Hình ảnh</th>
+                <th  class="text-center">Tên sản phẩm</th>
+                <th class="text-center">Giá tiền</th>
+                <th class="text-center">Lựa chọn</th>
+              </tr>
+          </thead>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="myModal">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+      
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title text-center">Thông tin nhân viên</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+      
+            <!-- Modal body -->
+            <div class="modal-body">
+                <img src="/ASSETS/img/changbebong.png" alt="" width="40%" class="hinhanht1">
+                <div class="tangfont">Tên:Phạm Thị Huyền Trang</div>
+                <div  class="tangfont">Ngày sinh:06/05/2003</div>
+                <div class="tangfont">Chức vị: Quản lý</div>
+                <div class="tangfont">Ngày vào làm:12/12/2022</div>
+            </div>
+      
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+            </div>
+      
+          </div>
+        </div>
+    </div>
+    
+    <div class="modal" id="myModal1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+      
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title text-center">Thông tin nhân viên</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+      
+            <!-- Modal body -->
+            <div class="modal-body">
+                <img src="/ASSETS/img/haule.jpg" alt="" width="40%" class="hinhanht1">
+                <div class="tangfont">Tên:Lê Trung Hậu</div>
+                <div  class="tangfont">Ngày sinh:17/12/2003</div>
+                <div class="tangfont">Chức vị: Quản l ý</div>
+                <div class="tangfont">Ngày vào làm:12/12/2022</div>
+            </div>
+      
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+            </div>
+      
+          </div>
+        </div>
+    </div>
+
+    <div class="modal" id="myModal3">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+      
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title text-center sp123">Thông tin nhân viên</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+      
+            <!-- Modal body -->
+            <div class="modal-body">
+                <form action="#" class="phom">
+                  <label for="">Hình ảnh:</label>
+                <input type="file" class="txthinhanh" required accept="image/png, image/jpeg" width="50px" height="50px">
+                <label for="">Tên:</label>
+                <input type="text" required class="txtten">
+                <label for="">Ngày sinh:</label>
+                <input type="date" required class="txtngaysinh">
+                <label for="">Chức vị:</label>
+                <input type="text" required class="txtchucvi">
+                <label for="">Ngày vào làm:</label>
+                <input type="date" required class="txtngayvao">
+              <button type="submit" class="btn btn-primary p-4 themNV" >Thêm</button>
+
+                </form>
+
+            </div>
+      
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger p-4" data-bs-dismiss="modal">Close</button>
+            </div>
+      
+          </div>
+        </div>
+      </div>
+      
+
+      <div class="modal" id="myModal1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+      
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title text-center">Thông tin nhân viên</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+      
+            <!-- Modal body -->
+            <div class="modal-body">
+                <img src="/ASSETS/img/haule.jpg" alt="" width="40%" class="hinhanht1">
+                <div class="tangfont">Tên:Lê Trung Hậu</div>
+                <div  class="tangfont">Ngày sinh:17/12/2003</div>
+                <div class="tangfont">Chức vị: Quản l ý</div>
+                <div class="tangfont">Ngày vào làm:12/12/2022</div>
+            </div>
+      
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+            </div>
+      
+          </div>
+        </div>
+    </div>
+
+    <div class="modal" id="myModal4">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+      
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title text-center sp123">Thông tin nhân viên</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+      
+            <!-- Modal body -->
+            <div class="modal-body">
+                <form action="#" class="phom">
+                  
+              <button type="submit" class="btn btn-primary p-4 themNV" >Thêm</button>
+
+                </form>
+
+            </div>
+      
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger p-4" data-bs-dismiss="modal">Close</button>
+            </div>
+      
+          </div>
+        </div>
+      </div>
+      
+<script>
+const xValues = [1,2,3,4,5,6,7,8,9,10,11,12];
+const yValues = [7,8,8,9,9,9,10,11,14,14,15,16];
+
+new Chart("myChart", {
+  type: "line",
+  data: {
+    labels: xValues,
+    datasets: [{
+      fill: false,
+      lineTension: 0,
+      backgroundColor: "rgba(0,0,255,1.0)",
+      borderColor: "rgba(0,0,255,0.1)",
+      data: yValues
+    }]
+  },
+  options: {
+    legend: {display: false},
+    scales: {
+      yAxes: [{ticks: {min: 6, max:16}}],
+    }
+  }
+});
+</script>
+
+
+
+
+
+    <!-- //footer -->
+    <div class="container-fluid">
+        <div class="row">
+            
+            <div class="nhiuimg fot2">
+                <img class="dichuyen" src="/ASSETS/img/dog3.png" alt="">
+                <img class="dichuyen" src="/ASSETS/img/dog1.png" alt="">
+                <img src="/ASSETS/img/dog2.png" alt="">
+                <img src="/ASSETS/img/dog4.png" alt="">
+                <img src="/ASSETS/img/dog5.png" alt="">
+                <img src="/ASSETS/img/dog6.png" alt="">
+  
+  
+            </div>
+        
+            <div class="footer">
+                <div class="logofoot">
+                    <div class="hinhlogo">
+                        <img src="/ASSETS/img/logo-removebg-preview.png" alt="" width="50%">
+                    </div>
+                    <p class="motalogo">Mang tình yêu thú cưng đến mọi nhà</p>
+                    <div class="social">
+                        <i class="fa-brands fa-facebook"></i><i class="fa-brands fa-instagram"></i>
+                    </div>
+                </div>
+                <div class="contact">
+                    <h1>Liên hệ</h1>
+                    <div class="contact-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span class="add1">Long An</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <span class="sdt1">012345678</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fa-solid fa-business-time"></i>
+                        <span class="tg1">T2->T7:8.AM->8.PM</span>
+                    </div>
+                </div>
+                <div class="TPET">
+                    <h1>Cộng dồng</h1>
+                    <div class="contact-item">
+                        <h2><i class="fa-solid fa-shop"></i>Cửa hàng thú cưng</h2>
+                    </div>
+                    <div class="contact-item">
+                        <h2><i class="fa-solid fa-table"></i>Dịch vụ tiện ích cho thú cưng</h2>
+  
+                    </div>
+                    <div class="contact-item">
+                        <h2><i class="fa-solid fa-person"></i>Cộng đồng TPET</h2>
+  
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+</body>
+<script src="../JS/bieudo.js"></script>
+<script src="../JS/log.js"></script>
+
+<script src="/JS/general.js"></script>
+
+
+
+
+</html>

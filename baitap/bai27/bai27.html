@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<style>
+.container {
+    width: 80%;
+    margin: auto;
+    box-shadow: 0 4px 8px rgba(19, 6, 6, 0.6), 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+.logo{
+    background-color: #0a0101;
+    display: flex;
+    justify-content: space-between;
+}
+.logo>span{
+    line-height: 142px;
+    font-size: 35px ;
+    margin-left: 40px;
+    color:white;
+}
+
+.logo>img{
+    display: inline-block;
+}
+
+li{
+    list-style-type: none;
+}
+.nav>ul{
+    display: flex;
+    justify-content: space-around;
+    margin: 0 0;
+    margin-left: -40px;
+}
+
+.nav>ul>li{
+    color:white;
+    background-color: #796a6a;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.nav>ul>li:hover{
+    background-color: rgb(224, 157, 34);
+}
+
+.search{
+    background-color: black;
+    padding-bottom: 4px;
+}
+
+.search>i{
+    margin: 20px 20px;
+    font-size: 20px;
+    color: white;font-weight: 800;
+    
+}
+
+.search>input{
+    width: 92%;
+    height: 40px;
+    margin: 3px 3px;
+}
+.section{
+    background-color: rgba(236, 215, 215, 0.4);
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.section__content{
+
+    width: 99%;
+    margin: auto;
+    
+
+}
+.content-container{
+    margin: 10px 10px;
+    background-color: white;
+}
+.content{}
+.content__heading{
+    margin-left: 10px;
+}
+.fa{}
+.comtent__des{
+    margin-left: 10px;
+
+}
+.left{}
+.mg2{
+    margin-top: 10px;
+}
+</style>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <span>CSS-TRICKS</span>
+                <img src="/img/images__1_-removebg-preview.png" alt="">
+            </div>
+            <div class="nav">
+                <ul>
+                    <li>Blog</li>
+                    <li>Videos</li>
+                    <li>Almanac</li>
+                    <li>Snippets</li>
+                    <li>Forums</li>
+                    <li>Jobs</li>
+                    <li>Lodge</li>
+                </ul>
+            </div>
+            <div class="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" name="" id="">
+            </div>
+        </header>
+
+        <div class="section">
+            <div class="section__content">
+                <div class="content-container">
+                    <div>
+                        <img src="" width="10px" height ="10px">
+                        <span style="opacity: 0.5;letter-spacing: 5px;"> CHRIS COVIER // JULY 29, 2015</span>
+                        <div> </div>
+                    </div>
+                    <div class="content__heading">
+                        <i class="fa-solid fa-arrow-right"></i>
+                        <span style="font-size: 30px;"></span><b>Motion along path in CSS</b>
+                    </div>
+                    <div class="comtent__des">
+                        <div><p>From the" 1 barely knew this was a thing and you can already play with it in vrowers "files"</p></div>
+                        <div style="border-left: 5px solid gray;""><p style="margin-left: 20px;">Montion paths allow authors to animate any graphical objext along an author spacified path</p></div>
+
+                        <div><p>i suspect Chrome jumped on this because it's something that was only otherwise doable inSSMIL, which
+                        they are ditch. i believe this is the firsttime the full path syntax has made it into CSS? (e.g )
+                        </p>
+                    
+                    </div>
+                        <div>
+                            There are some <a href="">demos on CodePen</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-container mg2">
+                    <div>
+                        <img src="" width="10px" height ="10px">
+                        <span style="opacity: 0.5;letter-spacing: 5px;"> CHRIS COVIER // JULY 29, 2015</span>
+                        <div> </div>
+                    </div>
+                    <div class="content__heading">
+                        <i class="fa-solid fa-arrow-right"></i>
+                        <span style="font-size: 30px;"></span><b>Motion along path in CSS</b>
+                    </div>
+                    <div class="comtent__des">
+                        <div><p>From the" 1 barely knew this was a thing and you can already play with it in vrowers "files"</p></div>
+                        <div style="border-left: 5px solid gray;""><p style="margin-left: 20px;">Montion paths allow authors to animate any graphical objext along an author spacified path</p></div>
+
+                        <div><p>i suspect Chrome jumped on this because it's something that was only otherwise doable inSSMIL, which
+                        they are ditch. i believe this is the firsttime the full path syntax has made it into CSS? (e.g )
+                        </p>
+                    
+                    </div>
+                        <div>
+                            There are some <a href="">demos on CodePen</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
