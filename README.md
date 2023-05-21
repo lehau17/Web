@@ -1,0 +1,2 @@
+Dạ em tên là Lê Trung Hậu do 1 số sự cố nên em đã đẩy các bài lap vào file bài tập ạ còn Project em để ở btlon ạ em đã remove các commit trước đẻ chuỷen các file vào ạ các lap em vẫn làm đayaf đủ mong thầy thôbg cảm giúp em em cảm ơn thầy ạ
+em cam kết các bài lap em làm đầy đủ ạ do sự cố dự án của em mới dẫn đến tình trạng này mong thầy thông cảm
